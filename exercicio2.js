@@ -6,7 +6,7 @@ const produto = {
 
 nome: "Teclado Gamer",
 
-preco: "150,00",
+preco: 150.00,
 
 estoque: 10,
 
@@ -16,13 +16,13 @@ estoque: 10,
 
 function aplicarDesconto(valor) {
 
-return valor - (20/100);
+return valor - (valor * 20 / 100);
 
 }
 
-const precoFinal = aplicarDesconto(preco);
+const precoFinal = aplicarDesconto(produto.preco);
 
-produto.estoque = produto.estoque - "um";
+produto.estoque = produto.estoque - 1;
 
 console.log("Produto: " + produto.nome);
 
