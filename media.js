@@ -8,21 +8,24 @@ const nota1 = 8;
 
 const nota2 = 5;
 
-function calcularMedia() {
+let status
 
 let media = (nota1 + nota2) / 2;
 
+function calcularMedia() {
 }
 
 calcularMedia();
 
 if (media >= 7) {
 
-const status = "Aprovado";
+status = "Aprovado";
 
-} else {
+} 
 
-const status = "Reprovado";
+else {
+
+status = "Reprovado";
 
 }
 
